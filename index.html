@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>baito</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>紙コップ計算</h1>
+  <h1 class="ab">雑巾枚数書く</h1>
+  <div id="app">
+        <form>
+            <label for="preNumCup">前日の総本数:</label>
+            <input type="number" id="preNumCup" v-model="preNumCup"><br>
+            <label for="syukka">　　　出荷数:</label>
+            <input type="number" id="syukka" v-model="syukka"><br>
+        </form>
+        <button v-on:click="onclick">個数計算</button>
+        
+        <h3 class="abc">計算結果</h3>
+        <div>{{numCase}} ケース  　{{amari}} 本</div>
+        <div>合計残り {{goukei}} 本</div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
